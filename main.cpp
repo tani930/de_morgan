@@ -30,7 +30,7 @@ void main()
     {
         scanf("%d",&b[i]);
     }
-    j=0;
+    i=0;
     for( ;i<n; )
     {
         d=0;
