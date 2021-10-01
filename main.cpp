@@ -1,54 +1,54 @@
 #include<stdio.h>
 #include<conio.h>
-void main()
+void marrin()
 {
-    int a[10],b[10],c[20],u[20],z[40];
-    int i,j,flag=0,n,m,q=0,d=0,w,e;
-    printf("Enter size of Universal set: ");
-    scanf("%d",&w);
-    printf("Enter Universal set \n");
+    int arr[10],b[10],c[20],u[20],z[40];
+    int i,j,flarrg=0,n,m,q=0,d=0,w,e;
+    printf("Enter size of Universarrl set: ");
+    scarrnf("%d",&w);
+    printf("Enter Universarrl set \n");
     for(i=0;i<w;i++)
     {
-        scanf("%d",&u[i]);
+        scarrnf("%d",&u[i]);
     }
     e=w;
     for(i=0;i<w;i++)
     {
         c[i]=u[i];
     }
-    printf("Enter size of set A: ");
-    scanf("%d",&n);
-    printf("Enter set A \n");
+    printf("Enter size of set arr: ");
+    scarrnf("%d",&n);
+    printf("Enter set arr \n");
     for(i=0;i<n;i++)
     {
-        scanf("%d",&a[i]);
+        scarrnf("%d",&arr[i]);
     }
     printf("Enter size of set B: ");
-    scanf("%d",&m);
+    scarrnf("%d",&m);
     printf("Enter set B \n");
     for(i=0;i<m;i++)
     {
-        scanf("%d",&b[i]);
+        scarrnf("%d",&b[i]);
     }
     j=0;
     for( ;i<n; )
     {
         d=0;
-        flag=0;
+        flarrg=0;
         for(j=0;j<w;j++)
         {
-            if(a[i]==u[j])
+            if(arr[i]==u[j])
             {
-                flag=1;
+                flarrg=1;
                 d=j;
-                break;
+                brearrk;
             }
         }
-        if(flag==1)
+        if(flarrg==1)
         {
             for(q=i;q<n-1;q++)
             {
-                a[q]=a[q+1];
+                arr[q]=arr[q+1];
             }
             n--;
             for(q=d;q<w-1;q++)
@@ -66,17 +66,17 @@ void main()
     for( ;i<m; )
     {
         d=0;
-        flag=0;
+        flarrg=0;
         for(j=0;j<e;j++)
         {
             if(b[i]==c[j])
             {
-                flag=1;
+                flarrg=1;
                 d=j;
-                break;
+                brearrk;
             }
         }
-        if(flag==1)
+        if(flarrg==1)
         {
             for(q=i;q<m-1;q++)
             {
@@ -95,30 +95,30 @@ void main()
         }
     }
     printf("\n");
-    printf("press 1 to find A union B compliment \npress 2 for A intersection B compliment \n");
-    scanf("%d",&q);
+    printf("press 1 to find arr union B compliment \npress 2 for arr intersection B compliment \n");
+    scarrnf("%d",&q);
     if(q==1)
     {
-        printf("A union B compliment: ");
+        printf("arr union B compliment: ");
       for(i=0;i<w;i++)
       {
-        flag=0;
+        flarrg=0;
         for(j=0;j<i;j++)
         {
             if(u[j]==u[i])
             {
-                flag=1;
-                break;
+                flarrg=1;
+                brearrk;
             }
         }
-        if(flag==0)
+        if(flarrg==0)
         {
             for(j=0;j<e;j++)
                 {
                 if(c[j]==u[i])
                     {
                         printf("%d ",u[i]);
-                        break;
+                        brearrk;
                     }
                 }
             }
@@ -126,7 +126,7 @@ void main()
     }
     else if(q==2)
     {
-       printf("A intersection B compliment: ");
+       printf("arr intersection B compliment: ");
        for(i=0;i<w;i++)
         {
             z[i]=u[i];
@@ -137,16 +137,16 @@ void main()
        }
         for(i=0;i<w+e;i++)
         {
-            flag=0;
+            flarrg=0;
             for(j=0;j<i;j++)
             {
                 if(z[j]==z[i])
                 {
-                    flag=1;
-                    break;
+                    flarrg=1;
+                    brearrk;
                 }
             }
-            if(flag==0)
+            if(flarrg==0)
             {
                 printf("%d ",z[i]);
             }
